@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-parse": "^4.3.3",
     "fs-extra": "^7.0.1",
     "puppeteer": "^1.12.2",
     "uuid": "^3.3.2"
