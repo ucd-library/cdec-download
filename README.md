@@ -19,12 +19,29 @@ npm install -g @ucd-lib/cdec-download
 Open shell and run ```cdec-download``` followed by a station id and ISO 8601 date.
 
 ```bash
-cdec-download [station] [yyyy-mm-dd]
+cdec-download [station] [action] [type]
 ```
 
+Actions: info, yearly, monthly, hourly
+Types: flow, riv stg, bat vol
+
 example:
+
+Download hourly data for one day
+
 ```bash
-cdec-download LSR 2018-02-01
+cdec-download LSR hourly flow -d 2018-02-01
+```
+
+Download all hourly data for one month, then create a month summary averaged by day.
+
+```bash
+cdec-download SRM monthly flow -d 2018-05
+```
+
+Get the station info url
+```bash
+cdec-download SRM info
 ```
 
 # Station IDs
